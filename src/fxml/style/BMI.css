@@ -1,0 +1,103 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#Pane_Rank{
+	
+	-fx-background-color: #FFFFFF;
+	-fx-border-color:     #a0a0a0;
+	 
+}
+
+#Label_Very_severely_underweight{
+	
+	-fx-background-color: #FFFFFF;
+	
+}
+
+#Label_Severely_underweight{
+	
+	-fx-background-color: #FFFFFF;
+}
+
+#Label_Underweight{
+	
+	-fx-background-color: #FFFFFF;	
+}
+
+#Label_Normal_healthy_weight{
+	
+	-fx-background-color: #FFFFFF;
+	
+}
+
+#Label_Overweight{
+	
+	-fx-background-color: #FFFFFF;
+	
+}
+
+#Label_Obese_Class_I_Moderately_obese{
+	
+	-fx-background-color: #FFFFFF;
+	
+}
+
+#Label_Obese_Class_II_Severely_obese{
+	
+	-fx-background-color: #FFFFFF;
+	
+}
+
+#Label_Obese_Class_III_Very_severely_obese{
+	
+	-fx-background-color: #FFFFFF;
+	
+}
+
+
+#Pane_Numberspad{
+	
+	-fx-background-color: #E8E8E8;
+	-fx-border-color: 	  #a0a0a0;
+	
+}
+
+#Text_BMI_Calculator{
+	
+	-fx-font: 42px Arial;
+    -fx-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, #B3EE3A 20%, #EE6A50 40%);
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+	
+}
+
+.Btn_Calculate_BMI {
+-fx-font-size: 13.0px;
+-fx-base: #00a7d4;
+-fx-background: #e5f3f6;
+-fx-focus-color: #0093FF;
+-fx-control-inner-background: #FFFFFF;
+-fx-text-base-color: #FFFFFF;
+-fx-background-color:#00a7d4;
+-fx-inner-border: linear-gradient(to bottom, derive(-fx-color,73.6%) 0%, derive(-fx-color,29.200000000000003%) 100%);
+-fx-body-color: linear-gradient( to bottom, derive(-fx-color, 34.0%) 0%, derive(-fx-color, -18.0%) 100%);
+-fx-background-insets: 0px;
+-fx-background-radius: 0px;
+-fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
+-fx-text-fill: -fx-text-base-color;
+-fx-alignment: CENTER;
+-fx-content-display: LEFT;
+}
+
+.Btn_Calculate_BMI:focused {
+-fx-color:#00a7d4;
+-fx-background-color:#ED9C28, #00a7d4;
+-fx-background-insets: -1.4, 0, 1, 2;
+-fx-background-radius: 0;
+}
+
+.Btn_Calculate_BMI:hover {
+-fx-focus-color: #FF0000;
+-fx-background-color: #ED9C28, #0187ab;
+}
+
+

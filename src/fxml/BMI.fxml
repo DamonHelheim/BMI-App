@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BMIApp.BMIMainController">
+   <children>
+      <Text fx:id="Text_BMI_Calculator" layoutX="14.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BMI calculator" wrappingWidth="307.2548828125">
+         <font>
+            <Font name="Arial" size="32.0" />
+         </font>
+      </Text>
+      <Text fx:id="Text_Enter_your_height_in_cm_here" layoutX="13.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your height in cm here:">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="Text_Enter_your_weight_in_kg_here" layoutX="14.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your weight in kg here:">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="Text_Result" layoutX="13.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="Text_Setting_the_language" layoutX="723.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select language">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TF_Enter_your_height" layoutX="13.0" layoutY="201.0" prefHeight="29.0" prefWidth="338.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="TF_Enter_your_weight" layoutX="13.0" layoutY="281.0" prefHeight="35.0" prefWidth="338.0">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="TF_Result" layoutX="13.0" layoutY="411.0" prefHeight="35.0" prefWidth="338.0">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></TextField>
+      <Pane fx:id="Pane_Rank" layoutX="367.0" layoutY="44.0" prefHeight="402.0" prefWidth="338.0" stylesheets="@../../bin/fxml/style/BMI.css">
+         <children>
+            <Label fx:id="Label_Very_severely_underweight" layoutX="1.0" layoutY="1.0" prefHeight="50.0" prefWidth="324.0" stylesheets="@../../bin/fxml/style/BMI.css" text=" Very severely underweight">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Label_Severely_underweight" layoutX="1.0" layoutY="51.0" prefHeight="50.0" prefWidth="324.0" stylesheets="@../../bin/fxml/style/BMI.css" text=" Severely underweight">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Label_Underweight" layoutX="1.0" layoutY="101.0" prefHeight="50.0" prefWidth="324.0" stylesheets="@../../bin/fxml/style/BMI.css" text=" Underweight">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Label_Obese_Class_I_Moderately_obese" layoutX="1.0" layoutY="251.0" prefHeight="50.0" prefWidth="324.0" stylesheets="@../../bin/fxml/style/BMI.css" text=" Obese Class I moderately obese">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Label_Overweight" layoutX="1.0" layoutY="201.0" prefHeight="50.0" prefWidth="324.0" stylesheets="@../../bin/fxml/style/BMI.css" text=" Overweight">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Label_Normal_healthy_weight" layoutX="1.0" layoutY="151.0" prefHeight="50.0" prefWidth="324.0" stylesheets="@../../bin/fxml/style/BMI.css" text=" Normal healthy weight">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Label_Obese_Class_II_Severely_obese" layoutX="1.0" layoutY="301.0" prefHeight="50.0" prefWidth="324.0" stylesheets="@../../bin/fxml/style/BMI.css" text=" Obese Class II severely obese">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Label_Obese_Class_III_Very_severely_obese" layoutX="1.0" layoutY="351.0" prefHeight="50.0" prefWidth="324.0" stylesheets="@../../bin/fxml/style/BMI.css" text=" Obese Class III moderately obese">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="Btn_Calculate_BMI" layoutX="13.0" layoutY="332.0" mnemonicParsing="false" onAction="#Btn_Calculate_BMI" prefHeight="33.0" prefWidth="338.0" text="Calculate BMI">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="Combox_Language" layoutX="723.0" layoutY="110.0" prefHeight="27.0" prefWidth="205.0" />
+      <Pane fx:id="Pane_Numberspad" layoutX="723.0" layoutY="187.0" prefHeight="259.0" prefWidth="205.0" stylesheets="@style/BMI.css">
+         <children>
+            <Button fx:id="Button1" layoutX="12.0" layoutY="136.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="Button2" layoutX="78.0" layoutY="136.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="Button3" layoutX="143.0" layoutY="136.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="Button6" layoutX="143.0" layoutY="75.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="Button5" layoutX="78.0" layoutY="75.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="Button4" layoutX="12.0" layoutY="75.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="Button7" layoutX="12.0" layoutY="14.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="7">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="Button8" layoutX="78.0" layoutY="14.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="Button9" layoutX="143.0" layoutY="14.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="Button0" layoutX="12.0" layoutY="195.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="116.0" text="0">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="ButtonDelete" layoutX="143.0" layoutY="195.0" mnemonicParsing="false" onAction="#ButtonDelete" prefHeight="50.0" prefWidth="50.0" text="C">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Text fx:id="Text_Number_Pad" layoutX="723.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numeric pad">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="CheckBox_Female" layoutX="14.0" layoutY="97.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="116.0" text="Female">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="CheckBox_Male" layoutX="147.0" layoutY="97.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="116.0" text="Male">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <Text fx:id="Text_Select_your_gender" layoutX="14.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select your gender">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
